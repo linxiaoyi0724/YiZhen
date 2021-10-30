@@ -29,7 +29,7 @@
     
 }
 
-- (void) tapAction:(UIImageView* )sender{
+- (void)tapAction:(UIImageView* )sender{
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc]init];
     imagePicker.allowsEditing = YES;
     imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
@@ -46,7 +46,7 @@
     NSLog(@"%@",info);
     [picker dismissViewControllerAnimated:YES completion:^{NSLog(@"选照片");}];
 }
-
+ 
 - (void) onCustom{
     UIImage *image = [UIImage imageNamed:@"color"];
     if(image){
@@ -55,3 +55,4 @@
 }
 
 @end
+//UIImagePickerControllerEditedImage
